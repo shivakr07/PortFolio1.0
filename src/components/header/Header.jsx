@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
-import headerImg from "../../assets/loading.gif";
+// import headerImg from "../../assets/loading.gif";
+// import vid from "../../assets/ayam.mp4";
 import 'animate.css';
 import './header1.css'
 
@@ -56,6 +57,7 @@ const Header = () => {
 
   return (
     <div className="header">
+      {/* <video autoplay loop muted playsinline src={vid}></video> */}
       <section className="banner" id="home">
         <Container>
           {/* <span className="tagline">&lsaquo; Hi i am Shiva and &rsaquo;</span>

@@ -48,8 +48,8 @@ const data = [
 const Testimonials = () => {
   return (
     <div className='section' id='tesimonials'>
-      <h5>I Write Blog</h5>
-      <h2>Testimonials</h2>
+      <h5>I Write Blogs on</h5>
+      <h2>Trending Tech</h2>
 
     <Swiper className="container testimonials__container"
     // install Swiper modules
