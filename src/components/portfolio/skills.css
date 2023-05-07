@@ -1,0 +1,114 @@
+.skill{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    /* margin: auto; */
+}
+.skills > div {
+  background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    /* border-radius: 2rem; */
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+/* .skills-section {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+.technologies {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  grid-template-columns: repeat(4, minmax(200px, 3fr));
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.technology {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  /* background-color: #fff; */
+}
+
+.technology:hover img {
+  transform: translateY(-5px);
+}
+
+.technology img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.expertise {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.level {
+  height: 5px;
+  background-color: #fff;
+  /* border-radius: 5px; */
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+/* .progress {
+  height: 100%;
+  background-color: #9FEF00;
+  width: 0%;
+  transition: width 0.3s ease-out;
+} */
+
+/* .technology:hover .progress {
+  width: 33.33%;
+} */
+
+.technology:hover {
+  box-shadow: 0 0 20px #9FEF00;
+}
+
+.technology:hover:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 20px #9FEF00;
+  z-index: -1;
+}
+
+/* .technology:hover .expertise {
+  background-color: #9FEF00;
+} */
+
+@media screen and (max-width: 840px) {
+  .technology {
+    width: 80%;
+    height: 90%;
+    padding: 1rem;
+
+  }
+}

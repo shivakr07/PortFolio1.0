@@ -1,0 +1,311 @@
+
+.header{
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+h1{
+    position: relative;
+    font-size: 4em;
+    color: #222;
+}
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%{
+        width: 15%;
+    }
+}
+h1::before{
+    
+    content: attr(data-text);
+    position: absolute;
+    color: #17f72d;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid#76f310;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #76f310 )drop-shadow(0 0 20px #76f310);
+}
+
+/* .section{
+    height: max-content;
+    margin-top: 400px;
+} */
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* =============== CTA ================ */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+
+/* =============== SOCIALS ================ */
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* =============== ME ================ */
+.me{
+    background: linear-gradient(#141D2B, transparent);
+    width: 40rem;
+    height: 28rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    overflow: hidden;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+    padding: 4rem 0rem 10rem 0rem; 
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+}
+/* --------------------- */
+
+.me img {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .me {
+    background: linear-gradient(transparent, #21252965);
+    width: 40rem;
+    height: 28rem;
+    position: absolute;
+    left: calc(40% - 11rem);
+    margin-top: 4rem;
+    overflow: hidden;
+    padding: 4rem 0rem 10rem 0rem;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .me img {
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    width: 70%;
+    max-width: 20rem;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatAstronaut 5s ease-in-out infinite alternate;
+  }
+  .air{
+    height: 1rem;
+    width: 2rem;
+  }
+  .air img{
+    margin-top: 25rem;
+    padding: 6rem;
+  }
+  .air img{
+    margin-top: 25rem;
+    padding: 6rem;
+    animation: moveAir 8s ease-in-out infinite alternate;
+}
+
+@keyframes moveAir {
+    0% { transform: translateX(-70px); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(-90px); }
+}
+
+  
+  @keyframes floatAstronaut {
+    0% {
+      transform: translate(-50%, -50%) translateY(-30px);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(30px);
+    }
+  }
+
+  
+ /* ---------------------  */
+
+.imagine{
+    width: 39rem;
+    margin-right: 9px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 39rem;
+    top: 20px;
+    left: -114px;
+    right: 9px;
+    position: absolute;
+    
+}
+
+
+/* =============== SCROLL DOWN ================ */
+.scroll__down{
+    position: absolute;
+    right: -2rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 68vh;
+    }
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%{
+            width: 20%;
+        }
+        
+    }
+}
+@media screen and (max-width: 840px) {
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%{
+            width: 55%;
+        }
+    }
+    .heade{
+        /* height: fit-content; */
+        margin-bottom:-4rem ;
+        height: fit-content;
+    }
+    
+    @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .me  {
+        margin-left: -9rem;
+        margin-top: -3rem;
+       
+        transform: rotate(7deg);
+        background: none;
+      }
+      
+}
+
+
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+    .header{
+        height: 100vh;
+    }
+
+    .header__socials, .scroll__down{
+        display: none;
+    }
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%{
+            width: 65%;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .header{
+        height: 100vh;
+    }
+
+    .header__socials, .scroll__down{
+        display: none;
+    }
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%{
+            width: 55%;
+        }
+    }
+}
+
+
+/* ---------------- */
+/* Add hover effect to moon and ast images */
+
+.me img:hover {
+  filter: brightness(50%);
+}
+.air img:hover {
+  filter: brightness(250%);
+}
+
+
+
+  

@@ -1,0 +1,131 @@
+@import"https://www.dafontfree.net/embed/c29sYXJpcy1yZWd1bGFyJmRhdGEvNDQwL3MvMTk5MzE5L1NvbGFyaXMudHRm";
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+.header{
+    height: 100vh;
+    /* padding-top: 7rem; */
+    width: 100%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    display: grid;
+    line-height: .3px;
+  }
+  #photu{
+      width: 15rem;
+      height: 15rem;
+  }
+  .aii{
+    display: grid;
+    grid-template-columns:4fr 1fr ;
+  }
+
+  .banner {
+    margin: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../../assets/ayam.gif');
+    /* background-image: url('../../assets/space.jpg'); */
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    color: #0cf513d2;
+    letter-spacing: 0.8px;
+    /* padding: 8px 10px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+
+    font-family: 'DotGothic16', sans-serif;
+  }
+  .container h1 {
+    color: #880cda;
+    opacity: 45%;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    font-family: Roboto Mono,Courier New,Courier,monospace!important
+  }
+  .banner p {
+    color: #b8b8b8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .banner img {
+    /* animation: updown 3s linear infinite; */
+
+    height: 100px;
+    width: 20px;
+  }
+  .loading{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-left: 0;
+  }
+  /* @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  } */
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #9FEF00;
+  }
+  
+h1{
+
+    animation: animate 2.25s linear infinite;
+
+  }
+
+  @keyframes animate {
+    0%, 100%{
+      color: #ffffff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #5cffff,
+        0 0 20px #5cfffff3,
+        0 0 40px #5cffffdc,
+        0 0 80px #5cffffdb,
+        0 0 120px #5cffff,
+        0 0 200px #5cffffb9,
+        0 0 300px #5cffffb3,
+        0 0 400px #5cffff7c;
+    }
+    5%, 95%{
+      color: #bcbeb9;
+      filter: blur(0px);
+      text-shadow: none;
+    }
+  }
+  
+  @media screen and (max-width: 840px) {
+    .aii{
+      display: flex;
+    }
+    .bx1{
+      width: 100%;
+    }
+    .banner h1 {
+      color: #bcbeb9;
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      line-height: .6;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+
