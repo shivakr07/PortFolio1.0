@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/PortFolio1.0/static/css/main.da793288.css",
-    "main.js": "/PortFolio1.0/static/js/main.d7b510ca.js",
+    "main.js": "/PortFolio1.0/static/js/main.e472d97f.js",
     "static/media/ayam.gif": "/PortFolio1.0/static/media/ayam.6b914997ebeac76be37f.gif",
-    "static/media/loading.gif": "/PortFolio1.0/static/media/loading.0605e2b1353fb275761a.gif",
     "static/media/flights.jpg": "/PortFolio1.0/static/media/flights.ad3dc3b00030b44b8180.jpg",
     "static/media/robo.jpg": "/PortFolio1.0/static/media/robo.b6decf1638679b4c62a7.jpg",
     "static/media/colorg.jpg": "/PortFolio1.0/static/media/colorg.a190507ecb84a6ee7bf9.jpg",
@@ -33,10 +32,10 @@
     "static/media/js.png": "/PortFolio1.0/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/PortFolio1.0/index.html",
     "main.da793288.css.map": "/PortFolio1.0/static/css/main.da793288.css.map",
-    "main.d7b510ca.js.map": "/PortFolio1.0/static/js/main.d7b510ca.js.map"
+    "main.e472d97f.js.map": "/PortFolio1.0/static/js/main.e472d97f.js.map"
   },
   "entrypoints": [
     "static/css/main.da793288.css",
-    "static/js/main.d7b510ca.js"
+    "static/js/main.e472d97f.js"
   ]
 }
