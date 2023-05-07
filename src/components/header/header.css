@@ -260,40 +260,8 @@ h1::before{
 
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ================ */
-@media screen and (max-width: 600px) {
-    .header{
-        height: 100vh;
-    }
 
-    .header__socials, .scroll__down{
-        display: none;
-    }
-    @keyframes animate{
-        0%, 10%, 100%{
-            width: 0;
-        }
-        70%{
-            width: 65%;
-        }
-    }
-}
-@media screen and (max-width: 640px) {
-    .header{
-        height: 100vh;
-    }
 
-    .header__socials, .scroll__down{
-        display: none;
-    }
-    @keyframes animate{
-        0%, 10%, 100%{
-            width: 0;
-        }
-        70%{
-            width: 55%;
-        }
-    }
-}
 
 
 /* ---------------- */
